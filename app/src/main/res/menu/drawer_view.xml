@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Thessaloniki Center Tour">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_center_tour_list_fragment"
+                    android:icon="@drawable/outline_location_city_black_24"
+                    android:title="View Locations List" />
+                <item
+                    android:id="@+id/nav_center_tour_map_fragment"
+                    android:icon="@drawable/outline_place_black_24"
+                    android:title="View Locations On Map" />
+            </group>
+        </menu>
+    </item>
+</menu>

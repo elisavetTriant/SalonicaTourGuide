@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Salonica Tour Guide</string>
+    <string name="street_address">Street Address</string>
+    <string name="location_web_address">Location Web Address</string>
+    <string name="location_phone_number">Location Phone Number</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
