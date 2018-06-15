@@ -1,16 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:title="Thessaloniki Center Tour">
+    <item android:title="@string/thessaloniki_city_center_tour">
         <menu>
             <group android:checkableBehavior="single">
                 <item
                     android:id="@+id/nav_center_tour_list_fragment"
                     android:icon="@drawable/outline_location_city_black_24"
-                    android:title="View Locations List" />
+                    android:title="@string/view_locations_list" />
                 <item
                     android:id="@+id/nav_center_tour_map_fragment"
                     android:icon="@drawable/outline_place_black_24"
-                    android:title="View Locations On Map" />
+                    android:title="@string/view_locations_on_map" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="@string/thessaloniki_museums_tour">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_museums_tour_list_fragment"
+                    android:icon="@drawable/outline_location_city_black_24"
+                    android:title="@string/view_museums_list" />
+                <item
+                    android:id="@+id/nav_museums_tour_map_fragment"
+                    android:icon="@drawable/outline_place_black_24"
+                    android:title="@string/view_museums_on_map" />
             </group>
         </menu>
     </item>

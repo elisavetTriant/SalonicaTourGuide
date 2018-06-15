@@ -43,10 +43,10 @@ public class MainActivity extends AppCompatActivity {
         nvDrawer = (NavigationView) findViewById(R.id.nvView);
 
         // Initialize first view
-        fragmentManager = getSupportFragmentManager();//Get Fragment Manager
+        /*fragmentManager = getSupportFragmentManager();//Get Fragment Manager
         fragmentManager.beginTransaction()
                 .replace(R.id.flContent, new ListsFragment())
-                .commit();
+                .commit();*/
 
         // Setup drawer view
         setupDrawerContent(nvDrawer);
@@ -68,20 +68,35 @@ public class MainActivity extends AppCompatActivity {
         // Create a new fragment and specify the fragment to show based on nav item clicked
         Fragment fragment = null;
         Class fragmentClass;
+        int listCode;
 
         switch(menuItem.getItemId()) {
             case R.id.nav_center_tour_list_fragment:
                 fragmentClass = ListsFragment.class;
+                listCode = 1;
                 break;
             case R.id.nav_center_tour_map_fragment:
                 fragmentClass = MapsFragment.class;
+                listCode = 1;
+                break;
+            case R.id.nav_museums_tour_list_fragment:
+                fragmentClass = ListsFragment.class;
+                listCode = 2;
+                break;
+            case R.id.nav_museums_tour_map_fragment:
+                fragmentClass = MapsFragment.class;
+                listCode = 2;
                 break;
             default:
                 fragmentClass = ListsFragment.class;
+                listCode = 1;
         }
 
         try {
             fragment = (Fragment) fragmentClass.newInstance();
+            Bundle selectedList = new Bundle();//Use bundle to pass data
+            selectedList.putInt("SELECTED_LIST_CODE", listCode);//put string, int, etc in bundle with a key value
+            fragment.setArguments(selectedList);//Finally set argument bundle to fragment
         } catch (Exception e) {
             e.printStackTrace();
         }
