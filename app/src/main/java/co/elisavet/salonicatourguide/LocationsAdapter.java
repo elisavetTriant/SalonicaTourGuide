@@ -50,8 +50,22 @@ public class LocationsAdapter extends RecyclerView.Adapter<LocationsAdapter.MyVi
 
         holder.location_name.setText(location.getlName());
         holder.location_street_address.setText(location.getlStreetAddress());
-        holder.location_web_page.setText(location.getlWebPage());
-        holder.location_phone_number.setText(location.getlPhoneNumber());
+
+        // Check if an Web Page is provided for this location or not
+        if (location.hasWebPage()) {
+            holder.location_web_page.setText(location.getlWebPage());
+            holder.location_web_page.setVisibility(View.VISIBLE);
+        } else {
+            holder.location_web_page.setVisibility(View.GONE);
+        }
+
+        // Check if an phone number is provided for this location or not
+        if (location.hasPhoneNumber()){
+            holder.location_phone_number.setText(location.getlPhoneNumber());
+            holder.location_phone_number.setVisibility(View.VISIBLE);
+        } else {
+            holder.location_phone_number.setVisibility(View.GONE);
+        }
 
         // Check if an image is provided for this location or not
         if (location.hasImage()) {

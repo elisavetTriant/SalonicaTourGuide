@@ -34,8 +34,8 @@ public class ListsFragment extends Fragment {
         // Inflate the layout for this fragment
         View view =  inflater.inflate(R.layout.fragment_lists, container, false);
 
-        //Get Argument that passed from activity in "SELECTED_LIST_CODE" key value
-        int selectedListCode = getArguments().getInt("SELECTED_LIST_CODE");
+        //Get Argument that passed from activity in "SELECTED_LIST_CODE_ID" key value
+        int selectedListCode = getArguments().getInt("SELECTED_LIST_CODE_ID");
 
         locations = new LocationData(selectedListCode).getLocations();
 

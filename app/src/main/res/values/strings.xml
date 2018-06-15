@@ -3,14 +3,14 @@
     <string name="street_address">Street Address</string>
     <string name="location_web_address">Location Web Address</string>
     <string name="location_phone_number">Location Phone Number</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="thessaloniki_city_center_tour">Thessaloniki City Center Tour</string>
-    <string name="view_locations_list">View Locations List</string>
-    <string name="view_locations_on_map">View Locations On Map</string>
+    <string name="view_locations_list">Locations List</string>
+    <string name="view_locations_on_map">Locations On Map</string>
     <string name="thessaloniki_museums_tour">Thessaloniki Museums Tour</string>
-    <string name="view_museums_list">View Museums List</string>
-    <string name="view_museums_on_map">View Museums on Map</string>
+    <string name="view_museums_list">Museums List</string>
+    <string name="view_museums_on_map">Museums on Map</string>
+    <string name="thessaloniki_theatres_and_cinemas">Thessaloniki Theatres and Cinemas</string>
+    <string name="view_theatres_and_cinemas_list">Theatres and Cinemas List</string>
+    <string name="view_theatres_and_cinemas_on_map">Theatres and Cinemas on Map</string>
 
 </resources>

@@ -24,7 +24,6 @@ public class MapsFragment extends android.support.v4.app.Fragment
 
     private GoogleMap mMap;
     private ArrayList<Location> locations = new ArrayList<>();
-    private int selectedListCode;
 
     public MapsFragment() {
         // Required empty public constructor
@@ -38,7 +37,7 @@ public class MapsFragment extends android.support.v4.app.Fragment
         View mapView =  inflater.inflate(R.layout.fragment_maps, container, false);
 
         //Get Argument that passed from activity in "SELECTED_LIST_CODE" key value
-        selectedListCode = getArguments().getInt("SELECTED_LIST_CODE");
+        int selectedListCode = getArguments().getInt("SELECTED_LIST_CODE_ID");
 
         locations = new LocationData(selectedListCode).getLocations();
 
@@ -77,7 +76,7 @@ public class MapsFragment extends android.support.v4.app.Fragment
             mMap.addMarker(new MarkerOptions().position(currentLatLng).title(currentLocation.getlName()));
         }
         // Move the camera to the center of Thessaloniki
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(40.63,22.95), 15));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(40.63,22.95), 14));
     }
 
 }

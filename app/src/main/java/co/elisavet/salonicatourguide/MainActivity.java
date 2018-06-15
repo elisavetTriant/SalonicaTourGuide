@@ -68,34 +68,43 @@ public class MainActivity extends AppCompatActivity {
         // Create a new fragment and specify the fragment to show based on nav item clicked
         Fragment fragment = null;
         Class fragmentClass;
-        int listCode;
+        //Specify which list will be loaded (see LocationData class)
+        int listCodeId;
 
         switch(menuItem.getItemId()) {
             case R.id.nav_center_tour_list_fragment:
                 fragmentClass = ListsFragment.class;
-                listCode = 1;
+                listCodeId = 1;
                 break;
             case R.id.nav_center_tour_map_fragment:
                 fragmentClass = MapsFragment.class;
-                listCode = 1;
+                listCodeId = 1;
                 break;
             case R.id.nav_museums_tour_list_fragment:
                 fragmentClass = ListsFragment.class;
-                listCode = 2;
+                listCodeId = 2;
                 break;
             case R.id.nav_museums_tour_map_fragment:
                 fragmentClass = MapsFragment.class;
-                listCode = 2;
+                listCodeId = 2;
+                break;
+            case R.id.nav_theatres_cinemas_list_fragment:
+                fragmentClass = ListsFragment.class;
+                listCodeId = 3;
+                break;
+            case R.id.nav_theatres_cinemas_map_fragment:
+                fragmentClass = MapsFragment.class;
+                listCodeId = 3;
                 break;
             default:
                 fragmentClass = ListsFragment.class;
-                listCode = 1;
+                listCodeId = 1;
         }
 
         try {
             fragment = (Fragment) fragmentClass.newInstance();
             Bundle selectedList = new Bundle();//Use bundle to pass data
-            selectedList.putInt("SELECTED_LIST_CODE", listCode);//put string, int, etc in bundle with a key value
+            selectedList.putInt("SELECTED_LIST_CODE_ID", listCodeId);//put int in bundle with a key value
             fragment.setArguments(selectedList);//Finally set argument bundle to fragment
         } catch (Exception e) {
             e.printStackTrace();

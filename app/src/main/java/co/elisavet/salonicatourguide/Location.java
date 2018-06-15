@@ -30,6 +30,12 @@ public class Location {
     /** Constant value that represents no image was provided for this location */
     private static final int NO_IMAGE_PROVIDED = -1;
 
+    /** Constant value that represents no web page was provided for this location */
+    private static final String NO_WEB_PAGE_PROVIDED = "";
+
+    /** Constant value that represents no phone number was provided for this location */
+    private static final String NO_PHONE_NUMBER_PROVIDED = "";
+
     /** Location Class Constructor - no image provided */
     public Location (double latitude, double longitude, String name, String streetAddress, String webPage, String phoneNumber){
         lLat = latitude;
@@ -85,5 +91,20 @@ public class Location {
     public boolean hasImage(){
         return lImageResourceId != NO_IMAGE_PROVIDED;
     }
+
+    /**
+     * Checks if an location phone number is provided
+     */
+    public boolean hasPhoneNumber(){
+        return !lWebPage.equals(NO_WEB_PAGE_PROVIDED) ;
+    }
+
+    /**
+     * Checks if an location phone number is provided
+     */
+    public boolean hasWebPage(){
+        return !lPhoneNumber.equals(NO_PHONE_NUMBER_PROVIDED) ;
+    }
+
 
 }

@@ -28,4 +28,18 @@
             </group>
         </menu>
     </item>
+    <item android:title="@string/thessaloniki_theatres_and_cinemas">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_theatres_cinemas_list_fragment"
+                    android:icon="@drawable/outline_location_city_black_24"
+                    android:title="@string/view_theatres_and_cinemas_list" />
+                <item
+                    android:id="@+id/nav_theatres_cinemas_map_fragment"
+                    android:icon="@drawable/outline_place_black_24"
+                    android:title="@string/view_theatres_and_cinemas_on_map" />
+            </group>
+        </menu>
+    </item>
 </menu>
