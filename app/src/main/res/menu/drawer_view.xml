@@ -42,4 +42,18 @@
             </group>
         </menu>
     </item>
+    <item android:title="@string/thessaloniki_places_of_high_interest">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_places_of_interest_list_fragment"
+                    android:icon="@drawable/outline_location_city_black_24"
+                    android:title="@string/places_of_interest_list" />
+                <item
+                    android:id="@+id/nav_places_of_interest_map_fragment"
+                    android:icon="@drawable/outline_place_black_24"
+                    android:title="@string/places_of_interest_on_map" />
+            </group>
+        </menu>
+    </item>
 </menu>

@@ -43,10 +43,10 @@ public class MainActivity extends AppCompatActivity {
         nvDrawer = (NavigationView) findViewById(R.id.nvView);
 
         // Initialize first view
-        /*fragmentManager = getSupportFragmentManager();//Get Fragment Manager
+        fragmentManager = getSupportFragmentManager();//Get Fragment Manager
         fragmentManager.beginTransaction()
-                .replace(R.id.flContent, new ListsFragment())
-                .commit();*/
+                .replace(R.id.flContent, new IntroFragment())
+                .commit();
 
         // Setup drawer view
         setupDrawerContent(nvDrawer);
@@ -95,6 +95,14 @@ public class MainActivity extends AppCompatActivity {
             case R.id.nav_theatres_cinemas_map_fragment:
                 fragmentClass = MapsFragment.class;
                 listCodeId = 3;
+                break;
+            case R.id.nav_places_of_interest_list_fragment:
+                fragmentClass = ListsFragment.class;
+                listCodeId = 4;
+                break;
+            case R.id.nav_places_of_interest_map_fragment:
+                fragmentClass = MapsFragment.class;
+                listCodeId = 4;
                 break;
             default:
                 fragmentClass = ListsFragment.class;

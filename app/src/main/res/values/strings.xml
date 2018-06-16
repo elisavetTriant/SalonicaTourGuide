@@ -12,5 +12,10 @@
     <string name="thessaloniki_theatres_and_cinemas">Thessaloniki Theatres and Cinemas</string>
     <string name="view_theatres_and_cinemas_list">Theatres and Cinemas List</string>
     <string name="view_theatres_and_cinemas_on_map">Theatres and Cinemas on Map</string>
+    <string name="thessaloniki_places_of_high_interest">Thessaloniki Places of High Interest</string>
+    <string name="places_of_interest_list">Places of Interest List</string>
+    <string name="places_of_interest_on_map">Places of Interest on Map</string>
+    <string name="welcome_to_the_thessaloniki_city_tour_guide">Welcome to the Thessaloniki City Tour Guide</string>
+    <string name="use_the_menu_to_navigate_between_hand_picked_locations_in_the_city_of_thessaloniki">Use the menu to navigate between hand-picked locations in the city of Thessaloniki!</string>
 
 </resources>

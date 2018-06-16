@@ -12,6 +12,7 @@ public class LocationData {
     private ArrayList<Location> cityCenterLocations = new ArrayList<>();
     private ArrayList<Location> museumsLocations = new ArrayList<>();
     private ArrayList<Location> theatersCinemasLocations = new ArrayList<>();
+    private ArrayList<Location> cityPlacesOfInterestLocations = new ArrayList<>();
 
 
     public LocationData(int locationsListCodeId) {
@@ -24,6 +25,9 @@ public class LocationData {
                 break;
             case 3:
                 locations = getTheatersCinemasLocations();
+                break;
+            case 4:
+                locations = getCityPlacesOfInterestLocations();
                 break;
             default:
                 locations = getCityCenterLocations();
@@ -83,8 +87,23 @@ public class LocationData {
             theatersCinemasLocations.add(new Location(40.637627, 22.966196, "Forest Theater (Kratiko Theatro Dasous) | National Theatre of Northern Greece", "Seich Sou Forest, Thessaloniki 554 38", "https://www.ntng.gr/default.aspx?lang=en-GB&page=15", "+30 231 520 0200"));
             theatersCinemasLocations.add(new Location(40.632773, 22.941788, "Olympion Cinema", "Aristotelous Square 10, Thessaloniki 546 23", "http://www2.filmfestival.gr/en/", "+30 231 028 4001"));
             theatersCinemasLocations.add(new Location(40.626572, 22.949419, "Makedonikon Cinema", "Filikis Etairias 44, Thessaloniki 546 21", "http://www.thekinematografers.com/", "+30 231 026 1727"));
-
+            theatersCinemasLocations.add(new Location(40.621535, 22.952217, "Open Air (Summer) Cinema Natali", "Leof. Meg. Aleksandrou 3, Thessaloniki 546 40", "http://www.thekinematografers.com/", "+30 231 082 9457"));
+            theatersCinemasLocations.add(new Location(40.631630, 22.950488, "Cinema Vakoura", "Michael Ioannou 10, Thessaloniki 546 22", "http://www.thekinematografers.com/", "+30 231 023 3665"));
+            theatersCinemasLocations.add(new Location(40.633621, 22.942978, "Cinema Alfa Odeon", "Tsimiski 43 (Platia Odeon), Thessaloniki 546 23", "http://odeon.gr/", "+30 231 029 0290"));
         }
         return theatersCinemasLocations;
+    }
+
+    private ArrayList<Location> getCityPlacesOfInterestLocations(){
+
+        if (cityPlacesOfInterestLocations.isEmpty()){
+            cityPlacesOfInterestLocations.add(new Location(40.630132, 22.954507, "HELEXPO - Thessaloniki", "Egnatia 154, Thessaloniki 546 36", "https://www.helexpo.gr/", "+30 231 029 1598"));
+            cityPlacesOfInterestLocations.add(new Location(40.629359, 22.955428, "Thessaloniki International Exhibition", "Egnatia 154, Thessaloniki 546 36", "https://www.helexpo.gr/", "+30 231 029 1111"));
+            cityPlacesOfInterestLocations.add(new Location(40.625777, 22.954789, "Vellidio Convention Center", "Stratou Avenue, Thessaloniki 546 39", "https://www.helexpo.gr/", "+30 231 029 1572"));
+            cityPlacesOfInterestLocations.add(new Location(40.626655, 22.952087, "YMCA Thessaloniki", "N.Germanou 1 - YMCA Square, Thessaloniki 54621", "http://www.ymca.gr/", "+30  2316 001 000"));
+        }
+
+        return cityPlacesOfInterestLocations;
+
     }
 }
