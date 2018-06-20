@@ -96,14 +96,14 @@ public class Location {
      * Checks if an location phone number is provided
      */
     public boolean hasPhoneNumber(){
-        return !lWebPage.equals(NO_WEB_PAGE_PROVIDED) ;
+        return !lPhoneNumber.equals(NO_PHONE_NUMBER_PROVIDED) ;
     }
 
     /**
-     * Checks if an location phone number is provided
+     * Checks if an location web page is provided
      */
     public boolean hasWebPage(){
-        return !lPhoneNumber.equals(NO_PHONE_NUMBER_PROVIDED) ;
+        return !lWebPage.equals(NO_WEB_PAGE_PROVIDED) ;
     }
 
 

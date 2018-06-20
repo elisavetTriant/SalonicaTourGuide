@@ -37,7 +37,7 @@ public class ListsFragment extends Fragment {
         //Get Argument that passed from activity in "SELECTED_LIST_CODE_ID" key value
         int selectedListCode = getArguments().getInt("SELECTED_LIST_CODE_ID");
 
-        locations = new LocationData(selectedListCode).getLocations();
+        locations = new LocationData(selectedListCode, this.getActivity()).getLocations();
 
         lAdapter = new LocationsAdapter(locations);
 
@@ -50,5 +50,4 @@ public class ListsFragment extends Fragment {
 
         return view;
     }
-
 }

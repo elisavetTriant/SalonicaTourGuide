@@ -39,7 +39,7 @@ public class MapsFragment extends android.support.v4.app.Fragment
         //Get Argument that passed from activity in "SELECTED_LIST_CODE" key value
         int selectedListCode = getArguments().getInt("SELECTED_LIST_CODE_ID");
 
-        locations = new LocationData(selectedListCode).getLocations();
+        locations = new LocationData(selectedListCode, this.getContext()).getLocations();
 
         initializeMap();
 

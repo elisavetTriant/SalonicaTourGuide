@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="@dimen/activity_horizontal_margin" >
+    android:padding="@dimen/activity_horizontal_margin"
+    android:background="@android:color/white">
 
 
     <ImageView
@@ -12,7 +13,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
-        android:scaleType="centerInside"
+        android:scaleType="fitXY"
+        android:layout_marginBottom="@dimen/widgets_margin"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -25,8 +27,7 @@
         android:textSize="@dimen/text_size_large"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/location_photo"
-        tools:text="Location Name"
-        android:layout_marginTop="@dimen/widgets_margin" />
+        tools:text="Location Name" />
 
 
     <TextView
