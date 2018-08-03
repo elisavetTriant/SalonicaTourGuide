@@ -36,7 +36,7 @@
     <string name="location_name_aristotelous">Aristotelous Square</string>
     <string name="location_address_aristotelous">Aristotelous, Thessaloniki 546 24</string>
     <string name="location_webpage_aristotelous">https://thessaloniki.travel/en/exploring-the-city/themed-routes/modern-architecture/item/1021-aristotelous-square</string>
-    <string name="location_phone_aristotelous"></string>
+    <string name="location_phone_aristotelous"> </string>
     <string name="location_name_kapani">Kapani Market</string>
     <string name="location_address_kapani">Menexe 25, Thessaloniki 546 24</string>
     <string name="location_webpage_kapani">https://kapani.gr/</string>
@@ -45,18 +45,10 @@
     <string name="location_address_modiano">Thessaloniki 546 24</string>
     <string name="location_webpage_modiano">https://en.wikipedia.org/wiki/Modiano_Market</string>
     <string name="location_phone_modiano">+30 231 400 5162</string>
-    <string name="location_name_roman_forum">Roman Forum Thessaloniki</string>
-    <string name="location_address_roman_forum">Olympou 75, Thessaloniki 546 31</string>
-    <string name="location_webpage_roman_forum">https://thessaloniki.travel/en/exploring-the-city/themed-routes/roman-route/item/958-the-roman-forum</string>
-    <string name="location_phone_roman_forum">+30 231 022 1266</string>
     <string name="location_name_agios_dimitrios">Church of Aghios (ST) Demetrius</string>
     <string name="location_address_agios_dimitrios">Agiou Dimitriou 83, Thessaloniki 546 33</string>
     <string name="location_webpage_agios_dimitrios">https://thessaloniki.travel/en/exploring-the-city/religion/greek-orthodox-churches/item/1833-church-of-aghios-st-demetrius</string>
     <string name="location_phone_agios_dimitrios">+30 231 027 0591</string>
-    <string name="location_name_alatza_imaret">Alatza Imaret</string>
-    <string name="location_address_alatza_imaret">Kassandrou 91—93, Thessaloniki 546 33</string>
-    <string name="location_webpage_alatza_imaret">https://en.wikipedia.org/wiki/Alaca_Imaret_Mosque</string>
-    <string name="location_phone_alatza_imaret">+30 231 027 8587</string>
     <string name="location_name_archaeological_museum">Archaeological Museum of Thessaloniki</string>
     <string name="location_address_archaeological_museum">Manoli Andronikou 6, Thessaloniki 546 21</string>
     <string name="location_webpage_archaeological_museum">https://www.amth.gr/en</string>
@@ -79,8 +71,8 @@
     <string name="location_phone_radio_museum">+30 697 330 0103</string>
     <string name="location_name_macedonia_music_museum">Macedonia Music Museum</string>
     <string name="location_address_macedonia_music_museum">Svolou 10, Thessaloniki 546 22</string>
-    <string name="location_webpage_macedonia_music_museum"></string>
-    <string name="location_phone_macedonia_music_museum"></string>
+    <string name="location_webpage_macedonia_music_museum"> </string>
+    <string name="location_phone_macedonia_music_museum"> </string>
     <string name="location_name_macedonia_struggle_museum">Macedonia Struggle Museum</string>
     <string name="location_address_macedonia_struggle_museum">Proksenou Koromila 23, Thessaloniki 546 22</string>
     <string name="location_webpage_macedonia_struggle_museum">http://www.imma.edu.gr/imma/index.html</string>
@@ -123,7 +115,7 @@
     <string name="location_phone_moni_lazariston_theatre">+30 231 058 9185</string>
     <string name="location_name_municipal_garden_theatre">Dimotiko Theatro Kipou (Municipal Garden Theater)</string>
     <string name="location_address_municipal_garden_theatre">N.Germanou, YMCA Square, Thessaloniki 546 21</string>
-    <string name="location_webpage_municipal_garden_theatre"></string>
+    <string name="location_webpage_municipal_garden_theatre"> </string>
     <string name="location_phone_municipal_garden_theatre">+30 231 025 6775</string>
     <string name="location_name_forest_theatre">Forest Theater (Kratiko Theatro Dasous) | National Theatre of Northern Greece</string>
     <string name="location_address_forest_theatre">Seich Sou Forest, Thessaloniki 554 38</string>
@@ -175,7 +167,7 @@
     <string name="location_phone_macedonia_university">+30 2310 891 101</string>
     <string name="location_name_vafopoulio">Vafopoulio Cultural Center</string>
     <string name="location_address_vafopoulio">Vafopoulou 5, Thessaloniki 546 46</string>
-    <string name="location_webpage_vafopoulio"></string>
+    <string name="location_webpage_vafopoulio"> </string>
     <string name="location_phone_vafopoulio">+30 231 042 4132</string>
     <string name="location_name_concert_hall">Thessaloniki Concert Hall (Megaro Mousikis)</string>
     <string name="location_address_concert_hall">Martiou 25, Thessaloniki 546 46</string>

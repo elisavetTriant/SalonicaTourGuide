@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -34,7 +35,7 @@ public class MapsFragment extends android.support.v4.app.Fragment
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View mapView =  inflater.inflate(R.layout.fragment_maps, container, false);
+        View mapView = inflater.inflate(R.layout.fragment_maps, container, false);
 
         //Get Argument that passed from activity in "SELECTED_LIST_CODE" key value
         int selectedListCode = getArguments().getInt("SELECTED_LIST_CODE_ID");
@@ -72,11 +73,11 @@ public class MapsFragment extends android.support.v4.app.Fragment
         //Loop through locations and add markers to the map
         for (int i = 0; i < locations.size(); i++) {
             Location currentLocation = locations.get(i);
-            LatLng currentLatLng = new LatLng(currentLocation.getlLat(),currentLocation.getlLong());
+            LatLng currentLatLng = new LatLng(currentLocation.getlLat(), currentLocation.getlLong());
             mMap.addMarker(new MarkerOptions().position(currentLatLng).title(currentLocation.getlName()));
         }
         // Move the camera to the center of Thessaloniki
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(40.63,22.95), 14));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(40.63, 22.95), 14));
     }
 
 }

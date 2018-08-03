@@ -6,38 +6,60 @@ package co.elisavet.salonicatourguide;
 
 public class Location {
 
-    /** Location Latitude */
+    /**
+     * Location Latitude
+     */
     private double lLat;
 
-    /** Location Longitude */
+    /**
+     * Location Longitude
+     */
     private double lLong;
 
-    /** Location name */
+    /**
+     * Location name
+     */
     private String lName;
 
-    /** Location Street Address */
+    /**
+     * Location Street Address
+     */
     private String lStreetAddress;
 
-    /** Location Web Page */
+    /**
+     * Location Web Page
+     */
     private String lWebPage;
 
-    /** Location Phone Number */
+    /**
+     * Location Phone Number
+     */
     private String lPhoneNumber;
 
-    /** Image resource ID for the location */
+    /**
+     * Image resource ID for the location
+     */
     private int lImageResourceId = NO_IMAGE_PROVIDED;
 
-    /** Constant value that represents no image was provided for this location */
+    /**
+     * Constant value that represents no image was provided for this location
+     */
     private static final int NO_IMAGE_PROVIDED = -1;
 
-    /** Constant value that represents no web page was provided for this location */
+    /**
+     * Constant value that represents no web page was provided for this location
+     */
     private static final String NO_WEB_PAGE_PROVIDED = "";
 
-    /** Constant value that represents no phone number was provided for this location */
+    /**
+     * Constant value that represents no phone number was provided for this location
+     */
     private static final String NO_PHONE_NUMBER_PROVIDED = "";
 
-    /** Location Class Constructor - no image provided */
-    public Location (double latitude, double longitude, String name, String streetAddress, String webPage, String phoneNumber){
+    /**
+     * Location Class Constructor - no image provided
+     */
+    public Location(double latitude, double longitude, String name, String streetAddress, String webPage, String phoneNumber) {
         lLat = latitude;
         lLong = longitude;
         lName = name;
@@ -46,8 +68,10 @@ public class Location {
         lPhoneNumber = phoneNumber;
     }
 
-    /** Location Class Constructor, with image resource Id - this location has an image */
-    public Location (double latitude, double longitude, String name, String streetAddress, String webPage, String phoneNumber, int imageResourceId){
+    /**
+     * Location Class Constructor, with image resource Id - this location has an image
+     */
+    public Location(double latitude, double longitude, String name, String streetAddress, String webPage, String phoneNumber, int imageResourceId) {
         lLat = latitude;
         lLong = longitude;
         lName = name;
@@ -88,22 +112,22 @@ public class Location {
     /**
      * Checks if an image resource id is provided
      */
-    public boolean hasImage(){
+    public boolean hasImage() {
         return lImageResourceId != NO_IMAGE_PROVIDED;
     }
 
     /**
      * Checks if an location phone number is provided
      */
-    public boolean hasPhoneNumber(){
-        return !lPhoneNumber.equals(NO_PHONE_NUMBER_PROVIDED) ;
+    public boolean hasPhoneNumber() {
+        return !lPhoneNumber.equals(NO_PHONE_NUMBER_PROVIDED);
     }
 
     /**
      * Checks if an location web page is provided
      */
-    public boolean hasWebPage(){
-        return !lWebPage.equals(NO_WEB_PAGE_PROVIDED) ;
+    public boolean hasWebPage() {
+        return !lWebPage.equals(NO_WEB_PAGE_PROVIDED);
     }
 
 

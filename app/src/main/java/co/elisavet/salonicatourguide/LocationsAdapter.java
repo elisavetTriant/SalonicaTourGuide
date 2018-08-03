@@ -60,7 +60,7 @@ public class LocationsAdapter extends RecyclerView.Adapter<LocationsAdapter.MyVi
         }
 
         // Check if an phone number is provided for this location or not
-        if (location.hasPhoneNumber()){
+        if (location.hasPhoneNumber()) {
             holder.location_phone_number.setText(location.getlPhoneNumber());
             holder.location_phone_number.setVisibility(View.VISIBLE);
         } else {

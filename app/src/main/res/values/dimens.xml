@@ -3,7 +3,6 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="widgets_margin">10dp</dimen>
-    <dimen name="list_item_min_height">80dp</dimen>
     <dimen name="text_size_large">24sp</dimen>
     <dimen name="text_size_normal">16sp</dimen>
 </resources>

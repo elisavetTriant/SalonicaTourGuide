@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
         //Specify which list will be loaded (see LocationData class)
         int listCodeId;
 
-        switch(menuItem.getItemId()) {
+        switch (menuItem.getItemId()) {
             case R.id.nav_center_tour_list_fragment:
                 fragmentClass = ListsFragment.class;
                 listCodeId = 1;

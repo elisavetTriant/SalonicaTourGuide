@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="@dimen/activity_horizontal_margin"
-    android:background="@android:color/white">
+    android:background="@android:color/white"
+    android:padding="@dimen/activity_horizontal_margin">
 
 
     <ImageView
@@ -13,10 +13,10 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
+        android:paddingBottom="@dimen/widgets_margin"
         android:scaleType="fitXY"
-        android:layout_marginBottom="@dimen/widgets_margin"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 
@@ -34,35 +34,35 @@
         android:id="@+id/location_street_address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/widgets_margin"
         android:textSize="@dimen/text_size_normal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/location_name"
-        tools:text="Street Address"
-        android:layout_marginTop="@dimen/widgets_margin" />
+        tools:text="Street Address" />
 
 
     <TextView
         android:id="@+id/location_web_page"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/text_size_normal"
+        android:layout_marginTop="@dimen/widgets_margin"
         android:autoLink="web"
+        android:textSize="@dimen/text_size_normal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/location_street_address"
-        tools:text="webPage"
-        android:layout_marginTop="@dimen/widgets_margin" />
+        tools:text="webPage" />
 
 
     <TextView
         android:id="@+id/location_phone_number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/text_size_normal"
+        android:layout_marginTop="@dimen/widgets_margin"
         android:autoLink="phone"
+        android:textSize="@dimen/text_size_normal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/location_web_page"
-        tools:text="Location Phone Number"
-        android:layout_marginTop="@dimen/widgets_margin" />
+        tools:text="Location Phone Number" />
 
 
 </android.support.constraint.ConstraintLayout>
